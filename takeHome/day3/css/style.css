@@ -1,14 +1,15 @@
 main{
     margin: auto;
     padding: 1em;
-    width: 700px;
+    width: 900px;
     min-height: 50vh;
     background-color: seashell;
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: space-around;
     text-align: center;
 }
 h1{
