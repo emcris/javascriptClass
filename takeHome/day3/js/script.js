@@ -1,8 +1,13 @@
 const H1 = document.getElementById('greeting');
 
-let firstName =prompt('what is your first name?');
+function myFunction() {
+    let firstName = prompt('what is your first name?');
+    const askColor = prompt('Pick one of the following colors: red, orange, yellow, green, blue, pink, purple, black, white, or grey. Await the folllowing responce...');
+  
 
-const askColor = prompt('Pick one of the following colors: red, orange, yellow, green, blue, pink, purple, black, white, or grey. Await the folllowing responce...');
+//let firstName =prompt('what is your first name?');
+
+//const askColor = prompt('Pick one of the following colors: red, orange, yellow, green, blue, pink, purple, black, white, or grey. Await the folllowing responce...');
 
 switch(askColor) {
     case 'red': 
@@ -60,5 +65,6 @@ switch(askColor) {
 
     default:
         H1.style.backgroundImage="url('https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')";
-       H1.innerHTML = `${firstName} you were one of those punks who never played colors correctly as a kid, get your aquamarine, chartreuse, magenta, clear whatever bullshit outa here.`;
+       H1.innerHTML = `You were one of those punks who never played colors correctly as a kid, get your aquamarine, chartreuse, magenta, clear whatever bullshit outa here.`;
+}
 }
