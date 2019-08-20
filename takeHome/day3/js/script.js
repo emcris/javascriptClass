@@ -60,4 +60,7 @@ switch(askColor) {
         H1.style.backgroundColor='grey';
         H1.innerHTML=`${firstName} you are cool and composed and a very reliable person who tends to conform to keep the peace.`;
     break;
+
+    default:
+       H1.innerHTML = `${firstName} you were one of those punks who never played colors correctly as a kid, get your aquamarine, chartreuse, magenta, clear whatever bullshit outa here.`;
 }
