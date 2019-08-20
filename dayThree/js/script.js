@@ -109,14 +109,27 @@
 
 //try it out 
 const age = prompt('Are you over 18? yes or no.');
-// const old = prompt('Are you less than 80 years old? yes or no.');
-// const starWars = prompt('Do you like Star Wars? yes or no.');
-// const prunes = prompt('Do you like prunes? yes or no.');
-// const loser = prompt('You are a loser, goodbye.')
+
+function old(){
+    prompt('Are you less than 80 years old? yes or no.');
+}
+
+function starWars(){
+    prompt('Do you like Star Wars? yes or no.');
+}
+
+function prunes(){
+    prompt('Do you like prunes? yes or no.');
+}
+
+function loser(){
+    alert('You are a loser, goodbye.')
+
+}
 
 switch(age) {
     case 'yes':
-        prompt('Are you less than 80 years old? yes or no.');
+        old();
             case 'yes':
                 prompt('Do you like Star Wars? yes or no.');
                 case 'yes':
