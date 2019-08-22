@@ -148,21 +148,37 @@ let bestWorst = [
 // }
 
 //For In
-// let people = [{
-//     firstName : 'Emily',
-//     lastName : 'Vagim',
-//     age : 22
-// }, 
-// {
-//     firstName : 'Jane',
-//     lastName : 'Doe',
-//     age : 24
-// }
+// let people = [
+//     {
+//         firstName : 'Emily',
+//         lastName : 'Vagim',
+//         age : 22
+//     }, 
+//     {
+//         firstName : 'Jane',
+//         lastName : 'Doe',
+//         age : 24
+//     }
 // ];
 
-// for (person of people) {
-//     console.log(people.firstName);
-// }
+let users = [
+    {
+        username: 'uni88',
+        createdAt: new Date()
+    },
+    {
+        username: 'me',
+        createdAt: new Date(10/12/2015)
+    },
+    {
+        username: 'dsjknfa',
+        createdAt: new Date()
+    }
+]
+
+for (user of users) {
+    console.log(`User: ${users.username}, and they were created on ${users.createdAt}`);
+}
 
 // let people = {
 //     firstName : 'E',
