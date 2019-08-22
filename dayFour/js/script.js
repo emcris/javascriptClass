@@ -78,3 +78,31 @@ console.log(refreshed);
 console.log(favMovie.reverse()); //reverse the order of the array
 
 //try it out
+let movie1 = ['Baby Driver', 'Baby']
+let movie2 = ['End Game', 'Iron Man']
+let movie3 = ['Into The Spiderverse', 'Miles Moralas']
+let movie4 = ['The Shinning', 'Johnny']
+let movie5 = ['The Lion King', 'Rafiki']
+
+let favoriteMovies = [
+    movie1,
+    movie2,
+    movie3,
+    movie4,
+    movie5
+];
+console.log(favoriteMovies);
+
+let titles = [];
+titles.push(movie1[0], movie2[0], movie3[0], movie4[0], movie5[0]);
+//alert(titles);
+
+let bestWorst = [
+    movie1,
+    movie3
+];
+console.log(bestWorst);
+
+//alert(favoriteMovies.length);
+
+//Loops
