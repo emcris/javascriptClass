@@ -63,4 +63,18 @@ favMovie.shift(); //removes the first element
 console.log(favMovie);
 console.log(favMovie.length);
 
-favMovie.splice();
+favMovie.splice(1, 1, 'beech'); //replace values in your array 1-who are you replacing 2-how many you are replacing 3-what you are replacing with
+console.log(favMovie);
+console.log(favMovie.length);
+
+let newArrayOfInfo = favMovie.slice(1) //a slice creates a completley new array, It is not the same as before 
+console.log(newArrayOfInfo);
+
+let findPositionToRemove = newArrayOfInfo.indexOf('2011'); //I just want to look at where it is
+console.log(newArrayOfInfo.indexOf(true));
+let refreshed = newArrayOfInfo.splice(findPositionToRemove, 1);
+console.log(refreshed);
+
+console.log(favMovie.reverse()); //reverse the order of the array
+
+//try it out
