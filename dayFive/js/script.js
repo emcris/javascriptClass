@@ -62,6 +62,24 @@ greeting.innerHTML = 'My Grocery List';
 
 //create function to add onto grocery list
 
-const addGroceryItem = 
+// const addGroceryItem = (arr, value) => arr.push(value);
+// console.log(addGroceryItem(arrayOfGroceryItems, 'Carrots'));
+// console.log(arrayOfGroceryItems);
+
+function addGroceryItem(arr, value) {
+    arr.push(value);
+}
+
+function ejectGroceryItemToList(val) {
+    //grab list item
+    //push array items to list on HTML
+    for(grocery = 0; grocery < 2; grocery++) {
+        groceryItem.innerHTML = val[grocery];
+    }
+}
 
 
+addGroceryItem(arrayOfGroceryItems,'test');
+addGroceryItem(arrayOfGroceryItems,'bread');
+console.log(arrayOfGroceryItems);
+ejectGroceryItemToList(arrayOfGroceryItems);
