@@ -70,11 +70,14 @@ function addGroceryItem(arr, value) {
     arr.push(value);
 }
 
-function ejectGroceryItemToList(val) {
+function ejectGroceryItemToList(values) {
     //grab list item
     //push array items to list on HTML
-    for(grocery = 0; grocery < 2; grocery++) {
-        groceryItem.innerHTML = val[grocery];
+    // for(grocery = 0; grocery < arrayOfGroceryItems.length; grocery++) {
+    //     groceryItem.innerHTML = val[grocery];
+    // }
+    foreach(val in values) {
+        groceryItem.innerHTML = values;
     }
 }
 
@@ -83,3 +86,7 @@ addGroceryItem(arrayOfGroceryItems,'test');
 addGroceryItem(arrayOfGroceryItems,'bread');
 console.log(arrayOfGroceryItems);
 ejectGroceryItemToList(arrayOfGroceryItems);
+
+
+
+//bonus take home repeat each li 
