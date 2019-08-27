@@ -70,15 +70,26 @@ function addGroceryItem(arr, value) {
     arr.push(value);
 }
 
-function ejectGroceryItemToList(values) {
+//function ejectGroceryItemToList(values) {
     //grab list item
     //push array items to list on HTML
     // for(grocery = 0; grocery < arrayOfGroceryItems.length; grocery++) {
     //     groceryItem.innerHTML = val[grocery];
     // }
-    foreach(val in values) {
-        groceryItem.innerHTML = values;
-    }
+    // foreach(val in values) {
+    //     groceryItem.innerHTML = values;
+    // }
+//}
+
+function ejectGroceryItemToList(values) { 
+    //goal: push array items to list on html
+​
+    /* the reason I called my list items in here because i need to loop through the id #'s to add individual array values into them, i do this by adding the `grocery` param by one so it adds; i am just appending the GROCERY val to the name to the id*/
+    for (grocery = 0; grocery < arrayOfGroceryItems.length; grocery++) {
+            let li = document.getElementById(`groceryItem${grocery + 1}`);
+            // now that I can loop through my list items, i can now eject EACH array val into EACH seperate list item.
+            li.innerHTML = values[grocery];
+        }
 }
 
 
