@@ -1,12 +1,12 @@
 //anon function
-let example = function () {
-    console.log('hello,there');
-}
+// let example = function () {
+//     console.log('hello,there');
+// }
 
 //naming function
-function exampleName() {
-    console.log('hello,there');
-}
+// function exampleName() {
+//     console.log('hello,there');
+// }
 
 //example();
 //exampleName();
@@ -27,21 +27,41 @@ function exampleName() {
 
 //real life gocery store test 
 //create an arry of three names 
-let names = [
-    'Jerry',
-    'Tom',
-    'April',
-    'Andy'
-];
+// let names = [
+//     'Jerry',
+//     'Tom',
+//     'April',
+//     'Andy'
+// ];
 //create a greeting that will be taking in a name value 
-const greeting = name => `Good evening ${name}`;
+// const greeting = name => `Good evening ${name}`;
 
 //tets the result first:
-console.log(`The array of names ${names}`, `greeting function value: ${greeting('Example')}`);
+// console.log(`The array of names ${names}`, `greeting function value: ${greeting('Example')}`);
 
-const limit = 3; //limit can replace names.length if you know how big it will be 
+// const limit = 3; //limit can replace names.length if you know how big it will be 
 //loop through names and add greeting function to it 
-for(i = 0; i < names.length; i++) {
-    console.log(greeting(names[i]));
-}
+// for(i = 0; i < names.length; i++) {
+//     console.log(greeting(names[i]));
+// }
+
+//grab elements from html
+// const h1 = document.getElementById('greeting');
+// const myList = document.getElementById('groceryList');
+// const listItem = document.getElementById('groceryItem');
+// const myInput = document.getElementById('getGroceryItem');
+
+const greeting = document.getElementById('greeting');
+const groceryList = document.getElementById('groceryList');
+const groceryItem = document.getElementById('groceryItem');
+const getGroceryItem = document.getElementById('getGroceryItem');
+
+let arrayOfGroceryItems = [];
+
+greeting.innerHTML = 'My Grocery List';
+
+//create function to add onto grocery list
+
+const addGroceryItem = 
+
 
