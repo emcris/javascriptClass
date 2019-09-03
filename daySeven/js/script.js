@@ -36,6 +36,7 @@ function halloweenCard() {
 
     const h1 = document.createElement('h1');
     h1.innerText = 'Happy Halloween!';
+    h1.className = 'orange';
     col.appendChild(h1);
 
     const img = document.createElement('img');
