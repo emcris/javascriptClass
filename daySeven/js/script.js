@@ -49,7 +49,7 @@ function halloweenCard() {
     p.innerText = 'hang in there pal it\'s almost halloween!'
     col.appendChild(p);
 
-    const icon = document.createElement('icon');
+    const icon = document.createElement('i');
     icon.className = 'fab fa-facebook';
     icon.innerText = 'facebook';
     col.appendChild(icon);
