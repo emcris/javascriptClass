@@ -20,10 +20,8 @@ body.appendChild(container);
 
 const form = document.createElement('form');
 form.setAttribute('method', 'GET');
-form.setAttribute('action', 'form-submission.js');
-form.setAttribute('name', 'myForm');
-
-
+form.setAttribute('action', 'js/form-submission.js');
+//form.setAttribute('name', 'myForm');
 
 form.setAttribute('name','sendEmail');
 form.className = 'inputs form-group';
