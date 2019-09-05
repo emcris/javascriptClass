@@ -10,10 +10,14 @@ body, .row{
     background-color: snow;
     padding: 1em;
     font-family: 'Courier New', Courier, monospace;
-    margin: auto;
+    /* margin: auto; */
     max-height: 100vh;
 }
 
 .inputs{
     padding: 100px;
+}
+
+.specialElements{
+    margin: 20px;
 }
