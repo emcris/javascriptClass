@@ -3,7 +3,7 @@ const container = document.createElement('div');
 container.className = 'container text-center';
 
 let test = body.appendChild(container);
-console.log(test);
+//console.log(test);
 
 const row = document.createElement('main');
 row.className = 'row';
@@ -19,9 +19,16 @@ body.appendChild(container);
 //form tag > imput:email(type email) - imput:subject(type text) - textarea(type text) - button:submit(type submit)
 
 const form = document.createElement('form');
+form.setAttribute('method', 'GET');
+form.setAttribute('action', 'form-submission.js');
+form.setAttribute('name', 'myForm');
+
+
+
 form.setAttribute('name','sendEmail');
-form.className = 'inputs';
+form.className = 'inputs form-group';
 content.appendChild(form);
+
 
 const email = document.createElement('input');
 email.setAttribute('name', 'email');
@@ -49,12 +56,9 @@ submitButton.setAttribute('type', 'submit');
 submitButton.setAttribute('text', 'submit');
 submitButton.className = 'btn-primary btn specialElements';
 submitButton.innerText = 'submit';
-
-
-//email.setAttribute = 'type', 'text';
 form.appendChild(submitButton);
 
-// let emailForm = document.forms.sendEmail;
+
 
 function globalFormElements(element, elemntType, elementName, elementClass, elementPlaceholder, elementId){
     //element : create the type of element you seek
@@ -77,6 +81,7 @@ const testAreaElement = (name, placeholder, elementClass, elementId, cols = 4, r
     element.id = elementId;
 
 }
-console.log(globalFormElements('input', 'text', 'example', 'form-control bg-primary', 'Type your example here'));
+//console.log(globalFormElements('input', 'text', 'example', 'form-control bg-primary', 'Type your example here'));
 
-console.log(globalFormElements('textarea', 'text', 'message', 'bg-danger', 'Please, let us know your concerns here.'));
+//console.log(globalFormElements('textarea', 'text', 'message', 'bg-danger', 'Please, let us know your concerns here.'));
+
