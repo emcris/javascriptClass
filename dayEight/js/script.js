@@ -56,14 +56,15 @@ form.appendChild(submitButton);
 
 // let emailForm = document.forms.sendEmail;
 
-function globalFormElements(element, elemntType, elementName, elementClass, elementPlaceholder){
+function globalFormElements(element, elemntType, elementName, elementClass, elementPlaceholder, elementId){
     //element : create the type of element you seek
     const newElement = document.createElement(element);
     newElement.setAttribute('type', elemntType);
     newElement.className = elementClass;
     newElement.setAttribute('name', elementName);
     newElement.setAttribute('placeholder', elementPlaceholder);
-    return element;
+    newElement.id = elementId;
+    return newElement;
 }
 const testAreaElement = (name, placeholder, elementClass, elementId, cols = 4, rows = 2)  => {
     const element = document.createElement('textarea');
