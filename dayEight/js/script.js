@@ -37,7 +37,7 @@ subject.setAttribute('placeholder', 'Subject');
 subject.setAttribute('class', 'form-control specialElements');
 form.appendChild(subject);
 
-const textArea = document.createElement('input');
+const textArea = document.createElement('textarea');
 textArea.setAttribute('type', 'textarea');
 textArea.setAttribute('type', 'textarea');
 textArea.setAttribute('class', 'form-control specialElements');
