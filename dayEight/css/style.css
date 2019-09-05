@@ -1,9 +1,19 @@
-.row{
-    background-color: tomato;
+body, .row{
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    flex-wrap: wrap;
 }
 
 .content{
     background-color: snow;
-    padding: 0.5em;
+    padding: 1em;
     font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    max-height: 100vh;
+}
+
+.inputs{
+    padding: 100px;
 }
