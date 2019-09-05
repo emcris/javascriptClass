@@ -1,0 +1,9 @@
+.row{
+    background-color: tomato;
+}
+
+.content{
+    background-color: snow;
+    padding: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
