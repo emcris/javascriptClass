@@ -11,3 +11,7 @@ function powerOfTwo() {
     }
 }
 powerOfTwo();
+
+function puctuation () {
+
+}
