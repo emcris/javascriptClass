@@ -9,14 +9,14 @@ console.log(container);
 function movieQuote() {
     alert('MINE MINE MINE');
 }
-
+let timer;
 function callQuote() {
-    //let timer = setInterval(movieQuote, 3000);
+    timer = setInterval(movieQuote, 3000);
     console.log('triggered');
 }
 
 function stopRunning() {
-    let stop = clearInterval(callQuote, 1000);
+    clearInterval(timer,1000);
 }
 
 const button = document.createElement('button');
@@ -29,7 +29,8 @@ const stopButton = document.createElement('button');
 stopButton.className = 'alert alert-danger border-danger border';
 stopButton.setAttribute('onclick', 'stopRunning()');
 stopButton.innerText = 'STOP';
+container.appendChild(stopButton);
 
-button.addEventListener('click', () => {
-    container.appendChild(stopButton);
-})
+// button.addEventListener('click', () => {
+//     container.appendChild(stopButton);
+// })
