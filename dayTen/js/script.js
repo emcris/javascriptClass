@@ -31,6 +31,28 @@ stopButton.setAttribute('onclick', 'stopRunning()');
 stopButton.innerText = 'STOP';
 container.appendChild(stopButton);
 
-// button.addEventListener('click', () => {
-//     container.appendChild(stopButton);
-// })
+button.addEventListener('click', () => {
+    container.appendChild(stopButton);
+    sessionStorage.setItem('TEMPORARY', 'Every problem is temporary!');
+    sessionStorage.getItem('TEMPORARY');
+    localStorage.setItem('DEATH', 'Except for death')
+    localStorage.getItem('DEATH');
+})
+
+//session storage
+// sessionStorage.setItem('TEMPORARY', 'Every problem is temporary!');
+// sessionStorage.getItem('TEMPORARY');
+
+//local storage
+// localStorage.setItem('DEATH', 'Except for death')
+// localStorage.getItem('DEATH');
+
+//anon function triggers another function within
+const example = function(param) {
+    return test(param);
+}
+function test (testParam) {
+    alert(testParam);
+}
+
+example('OKAY I SEE WHAT YOU DID THERE THO');
