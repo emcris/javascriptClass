@@ -1,11 +1,11 @@
 //https://dog.ceo/api/breeds/image/random
-function playWithApi() {
-    const url = 'https://dog.ceo/api/breeds/list/all';
-    fetch(url);
-    console.log(url);
-}
+// function playWithApi() {
+//     const url = 'https://dog.ceo/api/breeds/list/all';
+//     fetch(url);
+//     console.log(url);
+// }
 
-playWithApi();
+// playWithApi();
 
 // const box = document.createElement('div');
 // const button = document.createElement('button');
@@ -25,17 +25,19 @@ playWithApi();
 // console.log(exampleJson);
 
 //closure
-function practiceScope() {
-    let random = 'Inside scope.';
+// function practiceScope() {
+//     let random = 'Inside scope.';
 
-    const phrase = function () {
-        console.log('this is super cool, jax');
-    }
+//     const phrase = function () {
+//         console.log('this is super cool, jax');
+//     }
 
-    return phrase();
-}
+//     return phrase();
+// }
 
-let practiceOutside = practiceScope();
+// let practiceOutside = practiceScope();
+let wrapper = document.createElement('div');
+wrapper.className = 'wrapper';
 
 class aboutMe {
     constructor(name, age, petName, petBreed) {
@@ -47,14 +49,26 @@ class aboutMe {
         
 }
 
-aboutMe.prototype.myDog = fuction() {
-    const url = `https://dog.ceo/api/${this.petBreed}/list/all`
-    fetch(url);
-    console.log(url);
+aboutMe.prototype.myDog = function() {
+    const url = `https://dog.ceo/api/${this.petBreed}/list/all`;
+    fetch(url)
+    .then ( (transformJson) => {
+        return transformJson.json();
+    } )
 
+    .then ( (breedData) => {
+        console.log(breedData);
+        const image = document.createElement('img');
+        image.setAttribute('src', breedData.message);
+        wrapper.appendChild(image);
+    } )
+    
+    .catch( (err) => {
+        console.log(err);
+    } )
 }
     
 
 const emily = new aboutMe('Emily', 22, 'Ruby', 'boxer')
-console.log(emily);
+emily.myDog();
 
